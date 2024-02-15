@@ -1,0 +1,10 @@
+mqtt:
+  - switch:
+      unique_id: usb_pwr_switch
+      name: "USB Power"
+      command_topic: "usb_pwr_control/4"
+      payload_on: "on"
+      payload_off: "off"
+      optimistic: false
+      qos: 0
+      retain: false

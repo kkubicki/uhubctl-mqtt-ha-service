@@ -1,0 +1,12 @@
+[Unit]
+Description=USB Power Control Service
+After=network.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/home/kubi/usb_pwr_control.sh
+
+[Install]
+WantedBy=multi-user.target
+
